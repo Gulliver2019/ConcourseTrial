@@ -1,8 +1,7 @@
 ---
 resources: 
 - name: concourse-docs-git  
-  type: git  
-  icon: github  
+  type: git 
   source: 
     uri: https://github.com/Gulliver2019/ConcourseTrial
 
