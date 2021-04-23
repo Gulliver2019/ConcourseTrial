@@ -4,10 +4,18 @@ resources:
   type: git 
   source: 
     uri: https://github.com/Gulliver2019/ConcourseTrial
+    branch: main
+    private_key: |
+      -----BEGIN OPENSSH PRIVATE KEY-----
+      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      QyNTUxOQAAACAKbembLoec4xFOmH2FZHJ9NvgcLzj1Cd8H+3rl8qOe3AAAAJg4ftabOH7W
+      mwAAAAtzc2gtZWQyNTUxOQAAACAKbembLoec4xFOmH2FZHJ9NvgcLzj1Cd8H+3rl8qOe3A
+      AAAED2OXkUDz6DWhrljbuELueGqOQuOeROAuKXwDM+y15c7Apt6Zsuh5zjEU6YfYVkcn02
+      +BwvOPUJ3wf7euXyo57cAAAAEmdyYWhhbUBqdXN0Zy5jby51awECAw==
+      -----END OPENSSH PRIVATE KEY-----
 
 jobs:
 - name: job
-  public: true
   plan:
   - get: concourse-docs-git
     trigger: true
